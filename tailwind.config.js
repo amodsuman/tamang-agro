@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         opensans: ["Open Sans", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        yellowtail: ["Yellowtail", "sans-serif"],
       },
       colors: {
         "color-54F": "#00A54F",

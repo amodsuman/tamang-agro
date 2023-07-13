@@ -13,3 +13,18 @@ closeHam.addEventListener("click", function () {
   hammenubox.style.opacity = "0";
   document.body.style.overflow = "auto";
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: "false",
+});

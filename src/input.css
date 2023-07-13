@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -48,28 +49,32 @@ h6 {
 }
 
 p {
-    @apply font-opensans text-color-C60 font-normal text-sm md:text-base lg:text-lg;
+    @apply font-opensans text-color-C60 font-normal text-sm md:text-base lg:text-lg mb-3 md:mb-5;
 }
 
 ul, ol {
     @apply list-decimal font-opensans text-color-C60 font-normal text-sm md:text-base lg:text-lg space-y-1 md:space-y-3 lg:space-y-4;
 }
 
+.tag {
+    @apply font-opensans text-white font-semibold text-xs md:text-sm lg:text-base px-3 py-1 line-clamp-1 rounded-lg overflow-hidden bg-color-C5B capitalize w-fit;
+}
+
 /* Date */
 .date {
-    @apply font-roboto text-color-C5B font-extrabold flex flex-col items-center justify-center capitalize;
+    @apply font-roboto bg-white w-14 sm:w-16 md:w-20 h-auto aspect-square rounded-full overflow-hidden text-color-C5B font-extrabold flex flex-col items-center justify-center capitalize;
 }
 
 .date span:nth-child(1) {
-    @apply text-2xl;
+    @apply text-lg sm:text-xl md:text-2xl;
 }
 
 .date span:nth-child(2) {
-    @apply text-xl;
+    @apply text-base sm:text-lg md:text-xl -mt-2;
 }
 
 .btn {
-    @apply text-base md:text-lg lg:text-xl capitalize font-roboto font-bold flex items-center justify-center gap-2 rounded-2xl overflow-hidden w-full max-w-[240px] h-auto min-h-[48px] md:min-h-[56px] py-2;
+    @apply text-base md:text-lg lg:text-xl capitalize font-roboto font-bold flex items-center justify-center !gap-3 rounded-2xl overflow-hidden w-full max-w-[240px] h-auto min-h-[48px] md:min-h-[56px] py-2;
 }
 
 .btn svg {
@@ -100,10 +105,37 @@ ul, ol {
     @apply fill-[#335B6B] stroke-white;
 }
 
+/* Heading */
+
+.heading {
+    @apply flex flex-col items-center justify-center gap-0 sm:gap-1 md:gap-2 mb-8 sm:mb-10 md:mb-12;
+}
+
+.heading h4 {
+    @apply text-center font-yellowtail !font-light text-color-693;
+}
+
+.heading h3 {
+    @apply text-center text-color-C5B;
+}
+
+.heading.heading-left {
+    @apply items-start justify-start;
+}
+
+.heading.heading-left h3,
+.heading.heading-left h4 {
+    @apply text-left;
+}
+
 /* Header */
 
 .headerLogo img {
     @apply h-12 md:h-16 xl:h-20 2xl:h-32 w-auto;
+}
+
+.menusBox {
+    @apply z-[999];
 }
 
 .menusBox nav {
@@ -189,12 +221,26 @@ input {
 }
 
 header input {
-    border: 1px solid #525C60;
     border-radius: 36px;
     width: 100%;
     padding: 0 60px 0 16px;
+    background-color: #FAFAFA;
 }
 
 footer input {
     @apply w-full grow bg-white placeholder:italic px-4;
+}
+
+/* Home About Us */
+.homeAboutUs .container {
+    @apply !max-w-[1682px];
+}
+
+.homeNews .heading {
+    @apply !mb-0 !max-w-[702px];
+}
+
+/* Testimonials */
+.swiper-pagination-bullet-active {
+    background-color: #00A54F !important;
 }
