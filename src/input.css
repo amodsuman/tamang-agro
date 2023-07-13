@@ -69,7 +69,7 @@ ul, ol {
 }
 
 .btn {
-    @apply text-base md:text-lg lg:text-xl capitalize font-roboto font-bold flex items-center justify-center gap-2 rounded-2xl overflow-hidden w-full max-w-[240px] h-auto min-h-[56px] py-2;
+    @apply text-base md:text-lg lg:text-xl capitalize font-roboto font-bold flex items-center justify-center gap-2 rounded-2xl overflow-hidden w-full max-w-[240px] h-auto min-h-[48px] md:min-h-[56px] py-2;
 }
 
 .btn svg {
@@ -185,7 +185,7 @@ footer .copyright span {
 
 /* Form */
 input {
-    @apply h-14 rounded-2xl overflow-hidden bg-white border-none focus:outline-none active:outline-none;
+    @apply h-12 md:h-14 rounded-2xl overflow-hidden bg-white border-none focus:outline-none active:outline-none;
 }
 
 header input {

@@ -3,9 +3,11 @@ const closeHam = document.getElementById("closeHamMenu");
 const hammenubox = document.getElementById("hammenu");
 
 openHam.addEventListener("click", function () {
-  hammenubox.style.right = "0";
+  hammenubox.style.visibility = "visible";
+  hammenubox.style.opacity = "1";
 });
 
 closeHam.addEventListener("click", function () {
-  hammenubox.style.right = "-100%";
+  hammenubox.style.visibility = "hidden";
+  hammenubox.style.opacity = "0";
 });
