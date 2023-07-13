@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body,
+html {
+    @apply p-0 m-0 box-border;
+}
+
+body {
+    @apply font-opensans text-sm md:text-base lg:text-lg overflow-x-hidden text-color-C60;
+}
+
+.container {
+    @apply w-full max-w-[1480px] mx-auto px-4 sm:px-8 lg:px-10 xl:px-12;
+}
+
+.animation {
+    @apply transition-all duration-200 ease-in-out
+}
+
+h1 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+}
+
+h2 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+}
+
+h3 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+}
+
+h4 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+}
+
+h5 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-lg sm:text-xl md:text-2xl lg:text-3xl;
+}
+
+h6 {
+    @apply font-roboto capitalize text-color-C5B font-extrabold text-base sm:text-lg md:text-xl lg:text-2xl;
+}
+
+p {
+    @apply font-opensans text-color-C60 font-normal text-sm md:text-base lg:text-lg;
+}
+
+ul, ol {
+    @apply list-decimal font-opensans text-color-C60 font-normal text-sm md:text-base lg:text-lg space-y-1 md:space-y-3 lg:space-y-4;
+}
+
+/* Date */
+.date {
+    @apply font-roboto text-color-C5B font-extrabold flex flex-col items-center justify-center capitalize;
+}
+
+.date span:nth-child(1) {
+    @apply text-2xl;
+}
+
+.date span:nth-child(2) {
+    @apply text-xl;
+}
+
+.btn {
+    @apply text-base md:text-lg lg:text-xl capitalize font-roboto font-bold flex items-center justify-center gap-2 rounded-2xl overflow-hidden w-full max-w-[240px] h-auto min-h-[56px] py-2;
+}
+
+.btn svg {
+    @apply flex-shrink-0;
+}
+
+.pri-btn {
+    @apply bg-color-54F text-white;
+}
+
+.pri-btn svg {
+    @apply fill-white stroke-color-54F;
+}
+
+.sec-btn {
+    @apply bg-color-921 text-white;
+}
+
+.sec-btn svg {
+    @apply fill-white stroke-color-921;
+}
+
+.def-btn {
+    @apply bg-white border border-color-C5B text-color-C5B;
+}
+
+.def-btn svg {
+    @apply fill-[#335B6B] stroke-white;
+}
+
+/* Header */
+
+.headerLogo img {
+    @apply h-12 md:h-16 xl:h-20 2xl:h-32 w-auto;
+}
+
+.menusBox nav {
+    @apply w-full lg:w-auto order-2 lg:order-1;
+}
+
+.menusBox nav ul {
+    @apply list-none space-y-0 w-full lg:w-auto capitalize font-roboto font-bold text-lg xl:text-xl text-color-C5B flex flex-col lg:flex-row lg:gap-5 xl:gap-7 justify-start items-start lg:justify-center lg:items-center;
+}
+
+.menusBox nav ul li {
+    @apply hover:text-color-54F cursor-pointer border-b first:border-t lg:border-none w-full py-4 lg:p-0;
+}
+
+header .contactItems {
+    @apply flex list-none flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center lg:justify-start gap-5 md:gap-7 !space-x-0 !space-y-0;
+}
+
+header .contactItems li {
+    @apply flex items-center justify-start flex-row gap-2 text-color-C60;
+}
+
+header .contactItems li > div:nth-child(1),
+footer .contactItems li > div:nth-child(1) {
+    @apply aspect-square w-6 md:w-8 lg:w-10 h-auto flex-shrink-0;
+}
+
+header .contactItems li > div:nth-child(1) img,
+footer .contactItems li > div:nth-child(1) img {
+    @apply w-full h-full object-contain object-center flex-shrink-0;
+}
+
+header .contactItems li > div:nth-child(2) p:nth-child(1),
+footer .contactItems li > div:nth-child(2) p:nth-child(1) {
+    @apply !font-bold;
+}
+
+.socialMediaIcons a {
+    @apply aspect-square w-7 sm:w-8 md:w-9 h-auto flex-shrink-0;
+}
+
+.socialMediaIcons a img {
+    @apply h-full w-full object-contain object-center;
+}
+
+/* Footer */
+
+footer .contactItems {
+    @apply flex list-none flex-col items-start justify-start gap-5 !space-x-0 !space-y-0;
+}
+
+footer .contactItems li {
+    @apply flex items-center justify-start flex-row gap-2;
+}
+
+footer .quickLinks {
+    @apply flex list-none flex-col items-start justify-start gap-5 !space-x-0 !space-y-0 capitalize;
+}
+
+footer .quickLinks li a {
+    @apply text-color-C60 hover:text-color-54F animation;
+}
+
+footer .socialMediaIcons a {
+    @apply aspect-square w-8 sm:w-9 md:w-11 h-auto flex-shrink-0;
+}
+
+footer h5 {
+    @apply !font-bold mb-6 md:mb-8 text-color-C5B font-roboto;
+}
+
+footer .copyright {
+    @apply text-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-6 sm:pb-7 md:pb-8 lg:pb-9;
+}
+
+footer .copyright span {
+    @apply font-bold;
+}
+
+/* Form */
+input {
+    @apply h-14 rounded-2xl overflow-hidden bg-white border-none focus:outline-none active:outline-none;
+}
+
+header input {
+    border: 1px solid #525C60;
+    border-radius: 36px;
+    width: 100%;
+    padding: 0 60px 0 16px;
+}
+
+footer input {
+    @apply w-full grow bg-white placeholder:italic px-4;
+}

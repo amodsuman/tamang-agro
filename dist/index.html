@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Top Header -->
+      <div class="top-header bg-[#d9d9d9] py-7">
+        <div
+          class="container flex flex-col xxs:flex-row sm:flex-col xl:flex-row gap-8 xl:gap-10 justify-start xxs:justify-between sm:justify-center xl:justify-between items-start xxs:items-center sm:items-center"
+        >
+          <ul class="contactItems">
+            <!-- Contact Item -->
+            <li>
+              <div>
+                <img src="../images/svg/call.svg" alt="" />
+              </div>
+              <div>
+                <p>Call us on:</p>
+                <p>+977 9846424357</p>
+              </div>
+            </li>
+            <!-- Contact Item -->
+            <li>
+              <div>
+                <img src="../images/svg/mail.svg" alt="" />
+              </div>
+              <div>
+                <p>Email at:</p>
+                <p>info@tamangmultiagro.com</p>
+              </div>
+            </li>
+            <!-- Contact Item -->
+            <li>
+              <div>
+                <img src="../images/svg/location.svg" alt="" />
+              </div>
+              <div>
+                <p>We are located at:</p>
+                <p>Basundhara, Kathmandu</p>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="socialMediaIcons flex flex-row xxs:flex-col sm:flex-row items-start sm:items-center justify-start gap-3"
+          >
+            <!-- Social Media -->
+            <a href="#">
+              <img src="../images/svg/instagram.svg" alt="" />
+            </a>
+            <!-- Social Media -->
+            <a href="#">
+              <img src="../images/svg/facebook.svg" alt="" />
+            </a>
+            <!-- Social Media -->
+            <a href="#">
+              <img src="../images/svg/twitter.svg" alt="" />
+            </a>
+            <!-- Social Media -->
+            <a href="#">
+              <img src="../images/svg/printest.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main Header -->
+      <div class="main-header bg-[#fffffffa] shadow-md py-1">
+        <div class="container flex gap-5 xl:gap-8 justify-between items-center">
+          <div class="headerLogo">
+            <img src="../images/svg/full-logo.svg" alt="" />
+          </div>
+          <div
+            class="menusBox animation px-5 py-10 overflow-y-auto lg:overflow-auto lg:p-0 flex flex-col lg:flex-row items-start lg:items-center justify-start gap-10 lg:gap-5 xl:gap-8 grow h-screen lg:h-auto absolute lg:relative w-[300px] xs:w-[400px] lg:w-auto top-0 lg:top-auto -right-full lg:!right-auto bg-[#fffffffa] shadow-md lg:shadow-none"
+            id="hammenu"
+          >
+            <!-- Close Button -->
+            <div class="flex lg:hidden justify-end w-full">
+              <div class="aspect-square w-12 h-auto group" id="closeHamMenu">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="stroke-color-C5B group-hover:stroke-color-54F w-full h-auto"
+                >
+                  <g id="Menu / Close_SM">
+                    <path
+                      id="Vector"
+                      d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <!-- Menu Items -->
+            <nav>
+              <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>portfolio</li>
+                <li>projects</li>
+                <li>news</li>
+              </ul>
+            </nav>
+            <!-- Search -->
+            <form class="lg:grow relative w-full order-1 lg:order-2">
+              <input type="text" />
+              <button
+                type="submit"
+                class="absolute top-1/2 -translate-y-1/2 -translate-x-[5px] right-0 max-w-none aspect-square w-12 min-h-0 h-auto"
+              >
+                <img
+                  src="../images/svg/search.svg"
+                  alt="search"
+                  class="w-full h-auto"
+                />
+              </button>
+            </form>
+            <!-- Login -->
+            <a
+              href="#"
+              class="order-3 btn pri-btn flex gap-3 items-center justify-center lg:w-fit px-0 lg:px-6 xl:px-9 flex-shrink-0 !max-w-none"
+            >
+              <span>login</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <circle cx="10" cy="10" r="9.5" />
+                <path
+                  d="M10.7875 6.5L13.85 9.565M13.85 9.565L10.7875 12.63M13.85 9.565H6.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Hamburger Menu Icon -->
+          <div
+            class="group aspect-square w-10 h-auto block lg:hidden"
+            id="openHamMenu"
+          >
+            <svg
+              width="800px"
+              height="800px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-color-C5B group-hover:stroke-color-54F w-full h-auto"
+            >
+              <g id="Menu / Menu_Alt_01">
+                <path
+                  id="Vector"
+                  d="M12 17H19M5 12H19M5 7H19"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="h-[1000px]"></section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-10">
+      <div class="container">
+        <div
+          class="newsletter mb-16 sm:mb-20 md:mb-24 lg:mb-28 relative rounded-[30px] overflow-hidden px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 py-12 sm:py-16 md:py-20 lg:py-24"
+        >
+          <div class="absolute w-full h-full top-0 left-0">
+            <img
+              src="../images/others/image.jpg"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-80"
+          ></div>
+          <div
+            class="relative flex flex-col lg:flex-row items-center gap-6 xl:gap-10 w-full justify-between"
+          >
+            <h3 class="w-full lg:max-w-[357px] text-white !normal-case">
+              Subscribe to our Newsletter
+            </h3>
+            <form
+              action=""
+              class="flex flex-col md:flex-row gap-4 w-full lg:grow lg:max-w-[700px]"
+            >
+              <input type="text" placeholder="Your Email Address" />
+              <button
+                class="btn pri-btn flex gap-3 items-center justify-center !max-w-none xs:!max-w-[240px]"
+                type="submit"
+              >
+                <span>submit</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <circle cx="10" cy="10" r="9.5" />
+                  <path
+                    d="M10.7875 6.5L13.85 9.565M13.85 9.565L10.7875 12.63M13.85 9.565H6.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-y-10">
+          <div
+            class="order-2 lg:order-1 w-full xs:w-1/2 lg:w-1/4 pr-0 xs:pr-3 lg:pr-0"
+          >
+            <h5>contact us</h5>
+            <ul class="contactItems">
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/call.svg" alt="" />
+                </div>
+                <div>
+                  <p>Call us on:</p>
+                  <p>+977 9846424357</p>
+                </div>
+              </li>
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/mail.svg" alt="" />
+                </div>
+                <div>
+                  <p>Email at:</p>
+                  <p>info@tamangmultiagro.com</p>
+                </div>
+              </li>
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/location.svg" alt="" />
+                </div>
+                <div>
+                  <p>We are located at:</p>
+                  <p>Basundhara, Kathmandu</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="order-1 lg:order-2 w-full lg:w-1/2 px-0 lg:px-10 flex flex-col justify-center items-center gap-6"
+          >
+            <div class="w-[85%]">
+              <img
+                src="../images/svg/full-logo.svg"
+                alt=""
+                class="w-[220px] sm:w-[300px] lg:w-full lg:max-w-[450px] h-auto mx-auto"
+              />
+            </div>
+            <p class="mb-4 text-center w-full">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum simply dummy text of the printing
+            </p>
+            <div
+              class="socialMediaIcons flex flex-row items-center justify-center gap-3 w-full"
+            >
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/instagram.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/facebook.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/twitter.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/printest.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="order-3 w-full xs:w-1/2 lg:w-1/4 pl-0 xs:pl-3 lg:pl-0">
+            <h5>quick links</h5>
+            <ul class="quickLinks">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#">register</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">terms and conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">
+          Copyright © <span>Tamang Multi Agro Company</span> | Designed &
+          Developed by <span>Shiva Aryal</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
