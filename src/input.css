@@ -115,7 +115,7 @@ ul, ol {
 }
 
 .menusBox nav ul li {
-    @apply hover:text-color-54F cursor-pointer border-b first:border-t lg:border-none w-full py-4 lg:p-0;
+    @apply hover:text-color-54F animation cursor-pointer border-b first:border-t lg:border-none w-full py-4 lg:p-0;
 }
 
 header .contactItems {
