@@ -459,3 +459,108 @@ footer input {
 .portfolioItem .portfolioContent span {
     @apply text-color-693 font-normal font-yellowtail text-sm sm:text-base md:text-lg lg:text-xl capitalize;
 }
+
+/* Portfolio Detail Page */
+
+.newsDetailHero .newsDetailHerobanner,
+.portfolioDetailHero .portfolioDetailHerobanner {
+    @apply relative w-full h-auto aspect-[1920/1500] xs:aspect-[1920/1300] sm:aspect-[1920/1000] md:aspect-[1920/800] overflow-hidden;
+}
+
+.newsDetailHero .newsDetailHerobanner,
+.portfolioDetailHero .portfolioDetailHerobanner img {
+    @apply w-full h-full object-cover object-center;
+}
+
+.portfolioDetailHero .portfolioDetailHeroContent {
+    @apply shadow-md rounded-[20px] overflow-hidden grid grid-cols-1 md:grid-cols-[1fr,350px] lg:grid-cols-[1fr,400px] xl:grid-cols-[1fr,450px];
+}
+
+.portfolioDetailHero .portfolioDetailHeroContent .portfolioDetailHeroLeftContent {
+    @apply bg-white w-full h-full flex items-center justify-start px-6 sm:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 lg:py-12 xl:py-14;
+}
+
+.portfolioDetailHero .portfolioDetailHeroContent .portfolioDetailHeroLeftContent h1 {
+    @apply text-color-C5B font-roboto mb-5;
+}
+
+.newsDetailHero .newsDetailHeroContent p,
+.portfolioDetailHero .portfolioDetailHeroContent .portfolioDetailHeroLeftContent p {
+    @apply font-normal last:mb-0;
+}
+
+.portfolioDetailHero .portfolioDetailHeroContent .portfolioDetailHeroRightContent {
+    @apply bg-[#FAFAFA] w-full flex items-center justify-start px-6 sm:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 lg:py-12 xl:py-14;
+}
+
+.portfolioDetailHero .portfolioDetailHeroRightContent ul {
+    @apply list-none space-y-2 w-full;
+}
+
+.portfolioDetailHero .portfolioDetailHeroRightContent ul li {
+    @apply flex items-center justify-between gap-7 w-full;
+}
+
+.portfolioDetailHero .portfolioDetailHeroRightContent ul li span:nth-child(1) {
+    @apply font-bold;
+}
+
+.portfolioDetailHero ul li span:nth-child(2) {
+    @apply font-normal;
+}
+
+.portfilioDetailPageContent h4 {
+    @apply mb-3 md:mb-5 mt-5 text-color-C5B font-roboto;
+}
+
+.newsDetailPageContent img,
+.portfilioDetailPageContent img {
+    @apply mb-3 md:mb-5 mt-3 md:mt-5 w-full h-auto rounded-[20px] overflow-hidden;
+}
+
+.newsDetailPageContent ul,
+.portfilioDetailPageContent ul {
+    @apply pl-5 mb-3 md:mb-5 !list-disc;
+}
+
+/* News Detail */
+
+.newsDetailHero .newsDetailHeroContent {
+    @apply w-full shadow-md rounded-[20px] overflow-hidden flex flex-col gap-5 bg-white px-6 sm:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 lg:py-12 xl:py-14;
+}
+
+.newsDetailHero .newsDetailHeroContent h1 {
+    @apply text-color-C5B font-roboto;
+}
+
+.newsDetailHero .publish {
+    @apply flex flex-wrap gap-x-7 gap-y-5;
+}
+
+.newsDetailHero .publish .publishDate {
+    @apply flex gap-2 justify-start items-center;
+}
+
+.newsDetailHero .publish .publishDate span {
+    @apply font-normal first:font-bold font-roboto capitalize text-sm md:text-base lg:text-lg;
+}
+
+.newsDetailHero .publish .newsItemAuthor {
+    @apply flex gap-2 justify-start items-center;
+}
+
+.newsDetailHero .publish .newsItemAuthor > img {
+    @apply w-4 h-auto;
+}
+
+.newsDetailHero .publish .newsItemAuthor > span {
+    @apply text-color-C5B font-roboto font-normal text-sm md:text-base lg:text-lg;
+}
+
+.newsDetailPageContent h3 {
+    @apply mb-4 md:mb-6 mt-5 text-color-C5B font-roboto;
+}
+
+.newsDetailPageContent q {
+    @apply bg-[#F1EDEA] rounded-[30px] overflow-hidden px-6 sm:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 lg:py-12 xl:py-14 text-center font-bold text-color-C5B my-5 text-sm sm:text-base md:text-lg lg:text-xl;
+}
