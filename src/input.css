@@ -245,6 +245,53 @@ footer input {
     background-color: #00A54F !important;
 }
 
+/* News Item */
+
+.newsItem {
+    @apply relative flex flex-col;
+}
+
+.newsItem > img {
+    @apply w-full h-auto aspect-[677/524] rounded-[30px] overflow-hidden object-cover object-center;
+}
+
+.newsItem .date {
+    @apply absolute top-5 left-5;
+}
+
+.newsItem .newsItemContent {
+    @apply px-5 w-full -mt-[100px] lg:-mt-[200px];
+}
+
+.newsItem .newsItemContent .newsItemBox {
+    @apply bg-white shadow-md rounded-[30px] overflow-hidden p-5 sm:p-6 md:p-8 lg:p-10 w-full;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemAuthor {
+    @apply flex gap-2 justify-start items-center mb-4;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemAuthor > img {
+    @apply w-4 h-auto;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemAuthor > span {
+    @apply text-color-C5B font-roboto font-normal text-sm md:text-base lg:text-lg line-clamp-none md:line-clamp-1;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemDetails {
+    @apply mb-4;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemDetails h6 {
+    @apply font-roboto line-clamp-none md:line-clamp-1;
+}
+
+.newsItem .newsItemContent .newsItemBox .newsItemDetails p {
+    @apply font-opensans font-normal text-color-C60 line-clamp-none md:line-clamp-2;
+}
+
+
 /* Service Page */
 
 .serviceMainDetail h3 {
