@@ -244,3 +244,121 @@ footer input {
 .swiper-pagination-bullet-active {
     background-color: #00A54F !important;
 }
+
+/* Service Page */
+
+.serviceMainDetail h3 {
+    @apply mb-4 sm:mb-6 md:mb-8;
+}
+
+.servicePageServiceItem {
+    @apply grid gap-5 sm:gap-8 grid-cols-1;
+}
+
+.servicePageServiceItem:nth-child(odd) {
+    @apply sm:grid-cols-[calc(35%_-_32px),65%];
+}
+
+.servicePageServiceItem:nth-child(even) {
+    @apply sm:grid-cols-[65%,calc(35%_-_32px)];
+}
+
+.servicePageServiceItem:nth-child(even) {
+    @apply sm:grid-cols-[65%,calc(35%_-_32px)];
+}
+
+.servicePageServiceItem:nth-child(even) .serviceItemImage {
+    @apply order-1 sm:order-2;
+}
+
+.servicePageServiceItem:nth-child(even) .serviceItemContent {
+    @apply order-2 sm:order-1;
+}
+
+.serviceItemImage {
+    @apply flex items-center;
+}
+
+.serviceItemImage > div {
+    @apply aspect-[379/252] sm:aspect-auto w-full h-auto sm:h-full rounded-[20px] overflow-hidden max-w-[300px] sm:max-w-none;
+}
+
+.serviceItemImage img {
+    @apply w-full h-full object-cover object-center;
+}
+
+.serviceItemContent {
+    @apply grow h-full p-5 sm:p-6 md:p-7 lg:p-8 bg-[#F9F8F8] rounded-[20px] overflow-hidden flex items-center;
+}
+
+.serviceItemContent div h6 {
+    @apply text-color-C5B !font-medium mb-3 md:mb-5 font-roboto;
+}
+
+.serviceItemContent div p {
+    @apply last:mb-0;
+}
+
+.serviceBelowDetail h4 {
+    @apply mb-3 md:mb-5;
+}
+
+.serviceBelowFeature {
+    @apply flex flex-wrap justify-center gap-6;
+}
+
+.serviceBelowFeature .serviceBelowFeatureItem {
+    @apply flex flex-row gap-3 items-center justify-start w-full sm:w-[calc(50%_-_12px)] lg:w-[calc(33.33%_-_16px)] p-3 pr-5 rounded-[100px] bg-[#F9F8F8];
+}
+
+.serviceBelowFeature .serviceBelowFeatureItem div {
+    @apply aspect-square w-12 sm:w-14 md:w-16 lg:w-[70px] h-auto bg-[#7EB693] rounded-full overflow-hidden flex items-center justify-center flex-shrink-0;
+}
+
+.serviceBelowFeature .serviceBelowFeatureItem h5 {
+    @apply font-roboto text-color-C5B !font-medium;
+}
+
+.serviceBelowFeature .serviceBelowFeatureItem div h5 {
+    @apply font-roboto text-white !font-semibold;
+}
+
+.whatWeGrow .heading {
+    @apply max-w-[482px] mx-auto;
+}
+
+.whatWeGrow .whatWeGrowLeft {
+    @apply grid grid-cols-1 gap-7 md:gap-9 order-2 sm:order-1;
+}
+
+.whatWeGrow .whatWeGrowRight {
+    @apply grid grid-cols-1 gap-7 md:gap-9 order-3;
+}
+
+.whatWeGrow .whatWeGrowLeft .whatWeGrowItem {
+    @apply flex flex-col gap-1 md:gap-2 lg:gap-3 justify-start sm:justify-center items-start sm:items-end text-left sm:text-right;
+}
+
+.whatWeGrow .whatWeGrowRight .whatWeGrowItem {
+    @apply flex flex-col gap-1 md:gap-2 lg:gap-3 justify-start sm:justify-center items-start text-left;
+}
+
+.whatWeGrow .whatWeGrowItemImage {
+    @apply aspect-square w-7 md:w-9 lg:w-11 h-auto overflow-hidden;
+}
+
+.whatWeGrow .whatWeGrowItemImage img {
+    @apply w-full h-full object-contain;
+}
+
+.whatWeGrow .whatWeGrowItem p {
+    @apply line-clamp-none sm:line-clamp-3 last:mb-0;
+}
+
+.whatWeGrowProductImage {
+    @apply w-full h-auto sm:h-full order-1 sm:order-2;
+}
+
+.whatWeGrowProductImage img {
+    @apply w-full h-auto sm:h-full object-contain object-center;
+}
