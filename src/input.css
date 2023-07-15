@@ -128,6 +128,16 @@ ul, ol {
     @apply text-left;
 }
 
+.main-header {
+    @apply top-0 left-0 right-0 z-[9999];
+}
+
+.menusBox {
+    @apply  animation px-5 py-10 overflow-y-auto lg:overflow-auto lg:p-0 flex flex-col lg:flex-row items-start 
+    lg:items-center justify-start gap-10 lg:gap-5 xl:gap-8 grow h-screen lg:h-auto absolute lg:relative w-[300px] xs:w-[400px] 
+    lg:w-auto top-0 lg:top-auto right-0 opacity-0 invisible lg:!opacity-100 lg:!visible lg:!right-auto bg-[#fffffffa] shadow-md lg:shadow-none z-[999];
+}
+
 /* Header */
 
 .headerLogo img {

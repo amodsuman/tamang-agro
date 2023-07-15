@@ -1,3 +1,17 @@
+// Sticky Navbar
+// const headerNav = document.getElementById("mainHeader");
+// let lastScrollPos = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   const currentScrollPos = window.scrollY;
+//   if (currentScrollPos < lastScrollPos) {
+//     headerNav.classList.add("fixed");
+//   } else {
+//     headerNav.classList.remove("fixed");
+//   }
+//   lastScrollPos = currentScrollPos;
+// });
+
+// Hamburger Menu
 const openHam = document.getElementById("openHamMenu");
 const closeHam = document.getElementById("closeHamMenu");
 const hammenubox = document.getElementById("hammenu");
