@@ -362,3 +362,53 @@ footer input {
 .whatWeGrowProductImage img {
     @apply w-full h-auto sm:h-full object-contain object-center;
 }
+
+/* Portfolio Page */
+
+.portfolioItem {
+    @apply w-full flex flex-col gap-4;
+}
+
+.portfolioItem .portfolioImage {
+    @apply relative aspect-square w-full h-auto rounded-[30px] overflow-hidden;
+}
+
+.portfolioItem .portfolioImage img {
+    @apply relative w-full h-full object-cover object-center;
+}
+
+.portfolioItem .portfolioOverlay {
+    @apply absolute h-full w-full top-0 left-0 p-6 opacity-0 group-hover:opacity-100 animation;
+}
+
+.portfolioItem .portfolioImage:hover .portfolioOverlay {
+    @apply opacity-100;
+}
+
+.portfolioItem .portfolioOverlay {
+    @apply absolute h-full w-full top-0 left-0 p-6 opacity-0 group-hover:opacity-100 animation;
+}
+
+.portfolioItem .portfolioInnerOverlay {
+    @apply flex items-center justify-center w-full h-full bg-white rounded-tl-[20px] rounded-br-[20px] overflow-hidden;
+}
+
+.portfolioItem .portfolioInnerOverlay a {
+    @apply rounded-full overflow-hidden;
+}
+
+.portfolioItem .portfolioInnerOverlay a svg {
+    @apply w-8 sm:w-9 md:w-10 h-auto aspect-square fill-color-693 hover:fill-color-C5B animation;
+}
+
+.portfolioItem .portfolioContent {
+    @apply flex flex-col justify-start items-start;
+}
+
+.portfolioItem .portfolioContent h6 {
+    @apply text-color-C5B font-roboto;
+}
+
+.portfolioItem .portfolioContent span {
+    @apply text-color-693 font-normal font-yellowtail text-sm sm:text-base md:text-lg lg:text-xl capitalize;
+}
