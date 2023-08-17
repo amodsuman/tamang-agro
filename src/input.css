@@ -137,8 +137,8 @@ ul, ol {
 }
 
 .menusBox {
-    @apply  animation px-5 py-10 overflow-y-auto lg:overflow-auto lg:p-0 flex flex-col lg:flex-row items-start 
-    lg:items-center justify-start gap-10 lg:gap-5 xl:gap-8 grow h-screen lg:h-auto absolute lg:relative w-[300px] xs:w-[400px] 
+    @apply  animation px-5 py-10 overflow-y-auto lg:overflow-auto lg:p-0 flex flex-col lg:flex-row items-start
+    lg:items-center justify-start gap-10 lg:gap-5 xl:gap-8 grow h-screen lg:h-auto absolute lg:relative w-[300px] xs:w-[400px]
     lg:w-auto top-0 lg:top-auto right-0 opacity-0 invisible lg:!opacity-100 lg:!visible lg:!right-auto bg-[#fffffffa] shadow-md lg:shadow-none z-[999];
 }
 
@@ -577,4 +577,65 @@ footer input {
 
 .newsDetailPageContent q {
     @apply bg-[#F1EDEA] rounded-[30px] overflow-hidden px-6 sm:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 lg:py-12 xl:py-14 text-center font-bold text-color-C5B my-5 text-sm sm:text-base md:text-lg lg:text-xl;
+}
+
+/* KYC Form */
+.kyc {
+    @apply py-16 sm:py-20 md:py-24 lg:py-28 odd:bg-white even:bg-[#F9F8F8];
+}
+
+.kyc h4 {
+    @apply w-full capitalize text-center font-yellowtail !font-light text-color-693 mb-12 sm:mb-14 md:mb-16 lg:mb-[72px];
+}
+
+.kyc h4 span {
+    @apply ml-2 font-roboto text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold;
+}
+
+.kyc h5 {
+    @apply mb-6 sm:mb-8 md:mb-10 mt-12 sm:mt-14 md:mt-16 lg:mt-[72px] first:mt-0 w-full text-center capitalize;
+}
+
+.kyc h5 span {
+    @apply ml-2 font-roboto text-base sm:text-lg md:text-xl lg:text-2xl font-semibold;
+}
+
+.kycForm {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 text-base sm:text-lg md:text-xl lg:text-2xl text-black;
+}
+
+.kycForm .inputField {
+    @apply flex flex-col w-full;
+}
+
+.kycForm .inputField label {
+    @apply font-roboto capitalize font-bold text-color-C5B mb-3 px-5;
+}
+
+.kycForm .inputField label span {
+    @apply text-[#c7c6c6] font-normal text-sm md:text-base ml-2;
+}
+
+.kycForm .inputField input,
+.kycForm .inputField select {
+    @apply px-5 font-opensans text-base md:text-lg h-12 md:h-14 focus:outline-none active:outline-none !rounded-2xl;
+    border: 2px solid #7EB693;
+}
+
+.kycForm .inputField select{
+    @apply capitalize pr-10;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    width: 100%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+.kycForm .inputField .error {
+    @apply px-5 text-[#c71d1d] font-normal text-sm md:text-base mt-1 font-roboto !mb-0;
+}
+
+.submitKyc {
+    @apply pb-16 sm:pb-20 md:pb-24 lg:pb-28;
 }

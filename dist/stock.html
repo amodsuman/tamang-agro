@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Swiper Js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Hero -->
+    <section
+      class="py-24 sm:py-28 md:py-32 lg:py-36 bg-white relative overflow-hidden"
+    >
+      <div class="absolute w-full h-full top-0 left-0">
+        <img
+          src="../images/others/bannerbg.jpg"
+          alt=""
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+      <div
+        class="container relative flex flex-col gap-5 sm:gap-7 md:gap-9 lg:gap-11 items-start justify-start"
+      >
+        <h3 class="text-color-C5B font-roboto w-full text-center">
+          Apply for stock
+        </h3>
+      </div>
+    </section>
+
+    <!-- KYC Form -->
+    <section>
+      <form action="">
+        <!-- Interested shareholder Details -->
+        <div class="kyc">
+          <div class="container">
+            <h4>
+              Interested shareholder details<span
+                >(इच्छुक शेयरवालाको विवरण)</span
+              >
+            </h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(देवनागरी)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>full name<span>(english)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>date of birth b.s.<span>(जन्म मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>date of birth a.d.<span>(जन्म मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>nationality<span>(राष्ट्रियता)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Personal Details -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Personal details<span>(परिचय विवरण)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>identity type<span>(परिचयपत्र किसिम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>identification no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued authority<span>(जारी गर्ने निकाय)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>marital status<span>(वैवाहिक अवस्था)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Permanent Address -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Permanent Address<span>(स्थायी ठेगाना)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>country<span>(देश)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>Province<span>(प्रदेश)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>District<span>(जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>Rural / Municipality<span>(गाउँ / नगर)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>ward no.<span>(वडा नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>village / tole.<span>(गाउँ / टोल)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>house no.<span>(घर नं.)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Current Address -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Current Address<span>(हालको ठेगाना)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>country<span>(देश)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>Province<span>(प्रदेश)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>District<span>(जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>Rural / Municipality<span>(गाउँ / नगर)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>ward no.<span>(वडा नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>village / tole.<span>(गाउँ / टोल)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>house no.<span>(घर नं.)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Address -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Contact Address<span>(सम्पर्क ठेगाना)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>contact address<span>(सम्पर्क ठेगाना)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>mobile no.<span>(मोबाईल नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>e mail<span>(इमेल)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>phone no.<span>(फोन नं.)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Family Details -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Family Details<span>(पारिवारिक विवरण)</span></h4>
+            <h5>Father<span>(एकोनानी निरन्तर आम्दानी)</span></h5>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(पुरा नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>citizenship no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+            <h5>Mother<span>()</span></h5>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(पुरा नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>citizenship no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+            <h5>Grand father<span>()</span></h5>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(पुरा नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>citizenship no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+            <h5>husband / wife<span>()</span></h5>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(पुरा नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>citizenship no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+            <h5>son / daughter<span>()</span></h5>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>full name<span>(पुरा नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label>citizenship no.<span>(परिचयपत्र नं.)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued date<span>(जारी मिति)</span></label>
+                <input type="text" />
+              </div>
+              <div class="inputField">
+                <label>issued district<span>(जारी जिल्ला)</span></label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Incase Share Applicant Is Minor -->
+        <div class="kyc">
+          <div class="container">
+            <h4>
+              Incase Share Applicant Is Minor<span
+                >(निवेदक नाबालक भएको हकमा)</span
+              >
+            </h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>parent's name<span>(अभिभावकको नाम)</span></label>
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label
+                  >relation with applicant<span
+                    >(नावालक संगको सम्बन्ध)</span
+                  ></label
+                >
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Nominees Details -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Nominees Details<span>(इच्छाएको व्यक्तिको बिबरण)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label
+                  >nominee's name<span>(इच्छाएको व्यक्तिको नाम)</span></label
+                >
+                <input type="text" />
+                <p class="error">Please enter a valid text</p>
+              </div>
+              <div class="inputField">
+                <label
+                  >relation with applicant<span
+                    >(इच्छाएको व्यक्ति संगको सम्बन्ध)</span
+                  ></label
+                >
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Other Details -->
+        <div class="kyc">
+          <div class="container">
+            <h4>Other Details<span>(अन्य विवरण)</span></h4>
+            <div class="kycForm">
+              <div class="inputField">
+                <label>source of fund<span>(आयको स्रोत)</span></label>
+                <select>
+                  <option value="volvo" hidden selected>
+                    select (चयन गर्नुहोस्)
+                  </option>
+                  <option value="volvo">salary<span>(तलब)</span></option>
+                  <option value="volvo">
+                    business<span>(व्यापारिक कारोवार)</span>
+                  </option>
+                  <option value="volvo">
+                    sale of assets<span>(सम्पत्तिको विक्री)</span>
+                  </option>
+                  <option value="volvo">loan<span>(कर्जा)</span></option>
+                  <option value="volvo">others<span>(अन्य)</span></option>
+                </select>
+                <p class="error">Please enter a valid text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Submit -->
+        <div class="submitKyc container flex items-center justify-center">
+          <button class="btn pri-btn">
+            <span>submit</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <circle cx="10" cy="10" r="9.5" />
+              <path
+                d="M10.7875 6.5L13.85 9.565M13.85 9.565L10.7875 12.63M13.85 9.565H6.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-10">
+      <div class="container">
+        <!-- Subscribe to newsletter -->
+        <div
+          class="newsletter mb-16 sm:mb-20 md:mb-24 lg:mb-28 relative rounded-[30px] overflow-hidden px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 py-12 sm:py-16 md:py-20 lg:py-24"
+        >
+          <div class="absolute w-full h-full top-0 left-0">
+            <img
+              src="../images/others/image.jpg"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-black bg-opacity-80"
+          ></div>
+          <div
+            class="relative flex flex-col lg:flex-row items-center gap-6 xl:gap-10 w-full justify-between"
+          >
+            <h3 class="w-full lg:max-w-[357px] text-white !normal-case">
+              Subscribe to our Newsletter
+            </h3>
+            <form
+              action=""
+              class="flex flex-col md:flex-row gap-4 w-full lg:grow lg:max-w-[700px]"
+            >
+              <input type="text" placeholder="Your Email Address" />
+              <button
+                class="btn pri-btn !max-w-none xs:!max-w-[240px]"
+                type="submit"
+              >
+                <span>submit</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <circle cx="10" cy="10" r="9.5" />
+                  <path
+                    d="M10.7875 6.5L13.85 9.565M13.85 9.565L10.7875 12.63M13.85 9.565H6.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-y-10">
+          <div
+            class="order-2 lg:order-1 w-full xs:w-1/2 lg:w-1/4 pr-0 xs:pr-3 lg:pr-0"
+          >
+            <h5>contact us</h5>
+            <ul class="contactItems">
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/call.svg" alt="" />
+                </div>
+                <div>
+                  <p>Call us on:</p>
+                  <p>+977 9846424357</p>
+                </div>
+              </li>
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/mail.svg" alt="" />
+                </div>
+                <div>
+                  <p>Email at:</p>
+                  <p>info@tamangmultiagro.com</p>
+                </div>
+              </li>
+              <!-- Contact Item -->
+              <li>
+                <div>
+                  <img src="../images/svg/location.svg" alt="" />
+                </div>
+                <div>
+                  <p>We are located at:</p>
+                  <p>Basundhara, Kathmandu</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="order-1 lg:order-2 w-full lg:w-1/2 px-0 lg:px-10 flex flex-col justify-center items-center gap-6"
+          >
+            <div class="w-[85%]">
+              <img
+                src="../images/svg/full-logo.svg"
+                alt=""
+                class="w-[220px] sm:w-[300px] lg:w-full lg:max-w-[450px] h-auto mx-auto"
+              />
+            </div>
+            <p class="mb-4 text-center w-full">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum simply dummy text of the printing
+            </p>
+            <div
+              class="socialMediaIcons flex flex-row items-center justify-center gap-3 w-full"
+            >
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/instagram.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/facebook.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/twitter.svg" alt="" />
+              </a>
+              <!-- Social Media -->
+              <a href="#">
+                <img src="../images/svg/printest.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="order-3 w-full xs:w-1/2 lg:w-1/4 pl-0 xs:pl-3 lg:pl-0">
+            <h5>quick links</h5>
+            <ul class="quickLinks">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">login</a></li>
+              <li><a href="#">register</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">terms and conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">
+          Copyright © <span>Tamang Multi Agro Company</span> | Designed &
+          Developed by <span>Shiva Aryal</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
